@@ -60,7 +60,11 @@
     "test": "jest --passWithNoTests",
     "deploy:ar": "yarn export && arweave deploy-dir  ../../build/web --key-file ",
     "deploy:gh": "yarn export && gh-pages -d ../../build/web --repo https://github.com/roszac/grafiti -t true",
+<<<<<<< HEAD
     "deploy": "cross-env ASSET_PREFIX=%PUBLIC_URL%/grafiti/ yarn build && yarn deploy:gh",
+=======
+    "deploy": "cross-env ASSET_PREFIX=/grafiti/ yarn build && yarn deploy:gh",
+>>>>>>> e38ec95ce486511090567b9c3f99b66051b9bbc6
     "format:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|css|md)\""
   },
   "browserslist": {
